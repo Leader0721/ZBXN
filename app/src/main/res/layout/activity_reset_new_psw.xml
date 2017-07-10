@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_reset_new_psw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical"
+    tools:context="com.zbxn.main.activity.login.ResetNewPswActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/myUserName"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="30dp"
+                    android:text="新密码  "
+                    android:gravity="left|center"
+                    android:textSize="@dimen/app_text_16_middle"
+                    android:textColor="@color/tvc3"
+                    android:layout_gravity="center_vertical"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/etPsw1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:hint="请填写新密码"
+                    android:maxLength="32"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/tvc3"
+                    android:textColorHint="@color/tvcc"
+                    android:textSize="@dimen/app_text_16_middle" />
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@mipmap/temp142"
+                    android:id="@+id/isPassWordVis1"
+                    android:layout_width="30dp"
+                    android:clickable="true"
+                    android:padding="6dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:scaleType="centerInside"
+                    android:layout_height="30dp"/>
+                <ImageView
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@mipmap/temp141"
+                    android:id="@+id/etDeletePsw1"
+                    android:layout_width="30dp"
+                    android:clickable="true"
+                    android:padding="6dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:scaleType="centerInside"
+                    android:layout_height="30dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/pub_line_color" />
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/myPassword"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="30dp"
+                    android:text="确认密码  "
+                    android:gravity="left|center"
+                    android:textSize="@dimen/app_text_16_middle"
+                    android:textColor="@color/tvc3"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <EditText
+                    android:id="@+id/etPsw2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:hint="确认新密码"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/tvc3"
+                    android:textColorHint="@color/tvcc"
+                    android:textSize="@dimen/app_text_16_middle" />
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@mipmap/temp142"
+                    android:id="@+id/isPassWordVis2"
+                    android:layout_width="30dp"
+                    android:clickable="true"
+                    android:padding="6dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:scaleType="centerInside"
+                    android:layout_height="30dp"/>
+
+                <ImageView
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@mipmap/temp141"
+                    android:id="@+id/etDeletePsw2"
+                    android:layout_width="30dp"
+                    android:clickable="true"
+                    android:padding="6dp"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:scaleType="centerInside"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/pub_line_color" />
+        </LinearLayout>
+
+
+        <com.dd.CircularProgressButton
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btSure"
+            style="@style/circularprogressbutton_default"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/app_text_16_middle"
+            app:cpb_textIdle="确定" />
+
+    </LinearLayout>
+</LinearLayout>

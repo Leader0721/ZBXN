@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_followUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="点击此处填写跟进记录"
+                android:minLines="5"
+                android:padding="@dimen/parent_margin"
+                android:textColor="@color/tvc3"
+                android:textColorHint="@color/tvcc"
+                android:textSize="@dimen/app_text_14" />
+
+            <com.pub.widget.MyGridView
+                android:id="@+id/mGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/parent_margin"
+                android:background="@color/white"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:horizontalSpacing="@dimen/parent_margin"
+                android:numColumns="4"
+                android:verticalSpacing="@dimen/parent_margin" />
+
+            <com.pub.widget.MyListView
+                android:id="@+id/mListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="@dimen/parent_margin_large"
+            android:layout_marginRight="@dimen/parent_margin_top"
+            android:background="@drawable/style_roundedbox_1"
+            android:orientation="horizontal"
+            android:padding="@dimen/parent_margin_top">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/parent_margin_top"
+                android:src="@mipmap/followup_type" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/parent_margin_top"
+                android:text="跟进记录"
+                android:textColor="@color/cpb_blue" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/gray_holo_light"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:padding="@dimen/parent_margin"
+                android:src="@mipmap/custom_more"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:padding="@dimen/parent_margin"
+                android:src="@mipmap/picture" />
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:padding="@dimen/parent_margin"
+                android:src="@mipmap/custom_more"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_speech_recognition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:padding="@dimen/parent_margin"
+                android:src="@mipmap/speech_recognition" />
+
+            <ImageView
+                android:id="@+id/img_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:padding="@dimen/parent_margin"
+                android:src="@mipmap/record" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

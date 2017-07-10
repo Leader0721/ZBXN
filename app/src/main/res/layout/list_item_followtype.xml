@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/parent_margin">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="跟进记录"
+            android:textColor="@color/tvc3" />
+
+        <ImageView
+            android:id="@+id/img_followType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/checkbox_normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_followHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/parent_margin"
+        android:text="包含电话，微信，QQ，邮件等沟通方式"
+        android:textColor="@color/tvc9"
+        android:visibility="gone" />
+
+
+</LinearLayout>

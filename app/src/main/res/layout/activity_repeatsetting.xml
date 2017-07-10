@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/app_text_16_middle"
+            android:text="重复"
+            android:textColor="@color/tvc6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_16_middle"
+            android:id="@+id/tt_timeType"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.zbxn.main.activity.schedule.TimePickerView
+                android:id="@+id/number_picker"
+                android:clickable="true"
+                android:longClickable="true"
+                android:layout_width="100dp"
+                android:layout_height="160dp" />
+            <com.zbxn.main.activity.schedule.TimePickerView
+                android:id="@+id/timeType_picker"
+                android:clickable="true"
+                android:longClickable="true"
+                android:layout_width="100dp"
+                android:layout_height="160dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:background="@color/pub_line_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"/>
+            <RelativeLayout
+                android:id="@+id/linear_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="结束\u3000\u3000\u3000\u3000"
+                        android:textColor="@color/tvc6"
+                        android:textSize="@dimen/app_text_14" />
+
+                    <TextView
+                        android:id="@+id/tt_endTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="end|center_vertical"
+                        android:imeOptions="actionNext"
+                        android:text=""
+                        android:textColor="@color/tvc6"
+                        android:textSize="@dimen/app_text_13" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/bg_divider_1" />
+            </RelativeLayout>
+            <View
+                android:background="@color/pub_line_color"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

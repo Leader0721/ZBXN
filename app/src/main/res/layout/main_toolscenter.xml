@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/mAdvertBannerFragment"
+        android:name="com.zbxn.main.activity.tools.AdvertBannerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layout_oa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pub_backgroud_color"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/parent_margin_top"
+            android:paddingLeft="@dimen/parent_margin_large"
+            android:paddingTop="@dimen/parent_margin_top"
+            android:text="移动办公"
+            android:textColor="@color/tvc3"
+            android:textSize="@dimen/app_text_14"
+            android:visibility="gone" />
+
+        <com.pub.widget.MyGridViewLine
+            android:id="@+id/mGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_crm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pub_backgroud_color"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/parent_margin_top"
+            android:paddingLeft="@dimen/parent_margin_large"
+            android:paddingTop="@dimen/parent_margin_top"
+            android:text="CRM"
+            android:textColor="@color/tvc3"
+            android:textSize="@dimen/app_text_14"
+            android:visibility="gone" />
+
+        <com.pub.widget.MyGridViewLine
+            android:id="@+id/mGridView_crm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

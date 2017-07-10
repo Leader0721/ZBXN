@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_job_management"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical"
+    tools:context="com.zbxn.main.activity.jobManagement.JobManagementActivity">
+
+    <com.pub.widget.PullToRefreshSwipeListView
+        android:id="@+id/m_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isLoadEnable="true"
+        app:isRefreshEnable="true"
+        app:swipeBackView="@+id/layout_back"
+        app:swipeFrontView="@+id/layout_front" />
+
+</LinearLayout>

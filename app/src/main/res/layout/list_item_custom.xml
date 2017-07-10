@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ripple"
+    android:orientation="vertical"
+    android:padding="@dimen/parent_margin">
+
+    <TextView
+        android:id="@+id/tv_custom_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="山东淄博智博星网络科技有限公司"
+        android:textColor="@color/tvc3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/parent_margin_top"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跟进人："
+            android:textSize="@dimen/app_text_13"
+            android:textColor="@color/tvc9" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="XX"
+            android:textSize="@dimen/app_text_13"
+            android:layout_marginLeft="@dimen/parent_margin_top"
+            android:textColor="@color/tvc9" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-12-06 09:45"
+            android:textSize="@dimen/app_text_13"
+            android:textColor="@color/tvc9" />
+
+    </LinearLayout>
+
+</LinearLayout>

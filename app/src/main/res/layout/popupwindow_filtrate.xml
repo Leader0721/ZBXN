@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <com.pub.widget.NoScrollListview
+                    android:id="@+id/left_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="singleChoice" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_height" />
+
+                <TextView
+                    android:id="@+id/tv_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_ripple"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="@dimen/parent_margin"
+                    android:text="+添加筛选项"
+                    android:textColor="@color/cpb_blue" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/pub_backgroud_color"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/lv_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext_inviteempl"
+                android:hint="请输入"
+                android:padding="@dimen/parent_margin"
+                android:textColor="@color/tvc3"
+                android:textColorHint="@color/tvcc"
+                android:textSize="@dimen/app_text_14"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_ripple"
+                android:orientation="horizontal"
+                android:padding="@dimen/parent_margin"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请选择"
+                    android:textColor="@color/tvc3"
+                    android:textColorHint="@color/tvc9"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_select_people"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/icon_arrows"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line_height"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/parent_margin"
+            android:paddingTop="@dimen/parent_margin"
+            android:text="重置"
+            android:textColor="@color/cpb_blue" />
+
+        <View
+            android:layout_width="@dimen/line_height"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/parent_margin"
+            android:paddingTop="@dimen/parent_margin"
+            android:text="确定"
+            android:textColor="@color/cpb_blue" />
+
+    </LinearLayout>
+
+</LinearLayout>

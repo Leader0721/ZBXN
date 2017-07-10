@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 功能展示区 -->
+        <FrameLayout
+            android:id="@+id/framlayout_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- 底部菜单栏 -->
+        <include layout="@layout/schedule_bar" />
+
+    </LinearLayout>
+
+    <!--快捷功能入口-->
+    <LinearLayout
+        android:id="@+id/mShortCut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:padding="2dp"
+            android:src="@mipmap/addschedule" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="top"
+            android:text="创建"
+            android:textColor="@color/main_tab_text_gray"
+            android:textSize="@dimen/app_text_10" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="26dp"-->
+    <!--android:layout_height="26dp"-->
+    <!--android:padding="2dp"-->
+    <!--android:scaleType="centerInside"-->
+    <!--android:src="@mipmap/schedule1" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="14dp"-->
+    <!--android:gravity="top"-->
+    <!--android:tag="日程"-->
+    <!--android:text="日程"-->
+    <!--android:textColor="@color/main_tab_text_blue"-->
+    <!--android:textSize="@dimen/app_text_10" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="4dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="26dp"-->
+    <!--android:layout_height="26dp"-->
+    <!--android:scaleType="centerInside"-->
+    <!--android:src="@mipmap/addschedule" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="14dp"-->
+    <!--android:gravity="top"-->
+    <!--android:tag="新建"-->
+    <!--android:text="新建"-->
+    <!--android:textColor="@color/main_tab_text_gray"-->
+    <!--android:textSize="@dimen/app_text_10" />-->
+    <!--</LinearLayout>-->
+
+
+    <FrameLayout
+        android:id="@+id/mShortCutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+</RelativeLayout>

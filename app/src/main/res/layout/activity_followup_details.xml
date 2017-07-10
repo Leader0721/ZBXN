@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/parent_margin"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/parent_margin_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_head"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@mipmap/userhead_img" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/parent_margin"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="XXX"
+                            android:textColor="@color/tvc9" />
+
+                        <TextView
+                            android:id="@+id/tv_creatTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/parent_margin_top"
+                            android:text="2016-12-28 16:40"
+                            android:textColor="@color/tvc9" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/tv_followup"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="跟进记录" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/parent_margin"
+                    android:text="客户目前有意向合作，但需要考虑资金的问题，还在犹豫中！"
+                    android:textColor="@color/tvc6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f5f5f5"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/parent_margin"
+                android:paddingLeft="@dimen/parent_margin_large"
+                android:paddingRight="@dimen/parent_margin_large"
+                android:paddingTop="@dimen/parent_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关联客户"
+                    android:textColor="@color/tvc9" />
+
+                <TextView
+                    android:id="@+id/tv_relevance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/parent_margin_top"
+                    android:text="山东淄博智博星网络科技有限公司"
+                    android:textColor="@color/cpb_blue" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parent_margin_large"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/parent_margin"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/parent_margin_top"
+                android:paddingLeft="@dimen/parent_margin_large"
+                android:paddingTop="@dimen/parent_margin"
+                android:text="评论(0)"
+                android:textColor="@color/tvc9" />
+
+            <!--<fragment-->
+            <!--android:id="@+id/fragment_comment"-->
+            <!--android:name="com.zbxn.main.activity.workblog.CommentFragment"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+            <com.pub.widget.MyListView
+                android:id="@+id/mCommentListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_comment"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/app_text_8">
+
+        <ImageView
+            android:id="@+id/img_speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/speech_recognition" />
+
+        <EditText
+            android:id="@+id/mComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/parent_margin_top"
+            android:layout_weight="1"
+            android:background="@drawable/password_password"
+            android:gravity="center|left"
+            android:hint="写评论..."
+            android:maxLength="1000"
+            android:minLines="4"
+            android:padding="@dimen/app_text_8"
+            android:textColor="@color/tvc3"
+            android:textColorHint="@color/tvcc"
+            android:textSize="@dimen/app_text_12_small" />
+
+        <TextView
+            android:id="@+id/mPublish"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="发表"
+            android:textColor="@color/app_primary_text" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_alignTop="@+id/layout_comment"
+        android:background="@color/pub_line_color" />
+</RelativeLayout>

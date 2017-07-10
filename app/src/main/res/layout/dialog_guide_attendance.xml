@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bb000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/zhiyin_attendance_1" />
+
+        <ImageView
+            android:id="@+id/img_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/zhiyin_attendance_2" />
+
+        <ImageView
+            android:id="@+id/img_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/img_middle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:src="@mipmap/zhiyin_kaoqin_anniu" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/parent_margin"
+        android:layout_marginRight="@dimen/parent_margin"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_btn_gray_gray"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:drawableLeft="@mipmap/pub_nav_search"
+            android:drawablePadding="5dp"
+            android:hint="搜索"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/parent_margin"
+            android:paddingRight="@dimen/parent_margin"
+            android:singleLine="true"
+            android:textColor="@color/tvc6"
+            android:textColorHint="@color/tvcc"
+            android:textSize="@dimen/app_text_13"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/parent_margin"
+            android:paddingLeft="@dimen/parent_margin"
+            android:paddingRight="@dimen/parent_margin"
+            android:paddingTop="@dimen/parent_margin"
+            android:src="@mipmap/pub_ico_close_gray"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/parent_margin"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="取消"
+        android:textColor="@color/main_tab_text_blue"
+        android:textSize="@dimen/app_text_14"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@color/pub_line_color"
+            android:textSize="@dimen/app_text_13"
+            android:textColor="@color/cpb_blue"
+            android:text="  基本信息"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户名称\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_customer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名\u3000\u3000\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <LinearLayout
+        android:id="@+id/linear_phoneNum"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机\u3000\u3000\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户状态\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+        <TextView
+            android:background="@color/pub_line_color"
+            android:textSize="@dimen/app_text_13"
+            android:textColor="@color/cpb_blue"
+            android:text="  联系信息"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="省，市，区\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+        <TextView
+            android:id="@+id/tt_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址\u3000\u3000\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <LinearLayout
+        android:id="@+id/linear_telephoneNum"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话\u3000\u3000\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_telephone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <LinearLayout
+        android:id="@+id/linear_fax"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="传真\u3000\u3000\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_fax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <LinearLayout
+        android:id="@+id/linear_http"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网址\u3000\u3000\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_http"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <LinearLayout
+        android:id="@+id/linear_email"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子邮件\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+        <TextView
+            android:background="@color/pub_line_color"
+            android:textSize="@dimen/app_text_13"
+            android:textColor="@color/cpb_blue"
+            android:text="  其他信息"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户公共池\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_pool"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来源\u3000\u3000\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_source"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行业\u3000\u3000\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_industry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跟进人\u3000\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_follower"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="创建时间\u3000\u3000\u3000"
+                android:textColor="@color/tvc9"
+                android:textSize="@dimen/app_text_14" />
+
+            <TextView
+                android:id="@+id/tt_createtime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext_inviteempl"
+                android:textColor="@color/tvc6"
+                android:textSize="@dimen/app_text_13" />
+        </LinearLayout>
+        <View
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"/>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="创建人\u3000\u3000\u3000\u3000"
+                android:textColor="@color/tvc9"
+                android:textSize="@dimen/app_text_14" />
+
+            <TextView
+                android:id="@+id/tt_createman"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext_inviteempl"
+                android:textColor="@color/tvc6"
+                android:textSize="@dimen/app_text_13" />
+        </LinearLayout>
+        <View
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"/>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新时间\u3000\u3000\u3000"
+                android:textColor="@color/tvc9"
+                android:textSize="@dimen/app_text_14" />
+
+            <TextView
+                android:id="@+id/tt_updatetime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext_inviteempl"
+                android:textColor="@color/tvc6"
+                android:textSize="@dimen/app_text_13" />
+        </LinearLayout>
+        <View
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"/>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注\u3000\u3000\u3000\u3000\u3000"
+                android:textColor="@color/tvc9"
+                android:textSize="@dimen/app_text_14" />
+
+            <TextView
+                android:id="@+id/tt_remark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edittext_inviteempl"
+                android:textColor="@color/tvc6"
+                android:textSize="@dimen/app_text_13" />
+        </LinearLayout>
+        <View
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

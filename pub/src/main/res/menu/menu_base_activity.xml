@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_right2"
+        android:title="右边第二个按钮"
+        android:icon="@mipmap/ic_launcher"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/item_right1"
+        android:title="右边第一个按钮"
+        android:icon="@mipmap/ic_launcher"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+</menu>

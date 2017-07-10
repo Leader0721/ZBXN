@@ -1,0 +1,83 @@
+<resources>
+
+    <style name="circularprogressbutton_default">
+        <item name="cpb_cornerRadius">2dp</item>
+        <item name="cpb_selectorIdle">@drawable/style_circularprogressbutton_theme</item>
+        <item name="cpb_colorIndicator">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="circularprogressbutton_dialog_update">
+        <item name="cpb_cornerRadius">2dp</item>
+        <item name="cpb_selectorIdle">@drawable/style_circularbutton_dialog_update</item>
+        <item name="cpb_colorIndicator">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 底线和光标为亮色的Edittext -->
+    <style name="app_edittext_light" parent="app_theme.NoActionBar">
+        <item name="colorControlNormal">#B2DFDB</item>
+        <item name="colorControlActivated">#B2DFDB</item>
+    </style>
+
+    <!-- 新建任务页面的LinearLayout -->
+    <style name="mission_ll_light" parent="app_theme.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <!--新建任务页面的左边的TextView-->
+    <style name="mission_textview_left" parent="app_theme.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tvc6</item>
+        <item name="android:textSize">@dimen/app_text_14</item>
+    </style>
+    <!--新建任务页面的右边的TextView-->
+    <style name="mission_textview_right" parent="app_theme.NoActionBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/app_text_14</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="MyDateDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <!--用activity模拟dialog-->
+    <style name="dialogActivity">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 沾满全屏的dialog 用于蒙版引导适配view位置 -->
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

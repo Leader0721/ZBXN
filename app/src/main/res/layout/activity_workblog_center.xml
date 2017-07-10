@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pub_backgroud_color"
+        android:orientation="vertical">
+
+        <com.pub.widget.ProgressLayout
+            android:id="@+id/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.pub.widget.pulltorefreshlv.PullRefreshListView
+                android:id="@+id/listView_workBlog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@color/pub_line_color"
+                android:dividerHeight="@dimen/line_height"
+                android:drawSelectorOnTop="false"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="true"
+                android:scrollbars="none" />
+        </com.pub.widget.ProgressLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mContactsFragment"
+        android:layout_width="256dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/pub_backgroud_color" />
+
+</android.support.v4.widget.DrawerLayout>

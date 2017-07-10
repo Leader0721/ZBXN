@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+
+    <View
+        android:id="@+id/tv_line"
+        android:layout_width="@dimen/line_height"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/bg_button_moren" />
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_ripple"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/parent_margin"
+        android:text="拒绝"
+        android:textColor="@color/cancel"
+        android:textSize="@dimen/app_text_14" />
+</LinearLayout>

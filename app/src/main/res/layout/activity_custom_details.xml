@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.pub.widget.smarttablayout.SmartTabLayout
+        android:id="@+id/mSmartTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:paddingBottom="2dp"
+        app:stl_customTabTextLayoutId="@layout/workblogdetail_tab"
+        app:stl_customTabTextViewId="@+id/textview_tabname"
+        app:stl_dividerColor="@color/pub_backgroud_color"
+        app:stl_dividerThickness="@dimen/line_height"
+        app:stl_indicatorColor="@color/main_tab_text_blue"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="2dp"
+        app:stl_underlineThickness="2dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_follow_up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/add_circle"
+                android:gravity="center"
+                android:padding="@dimen/parent_margin"
+                android:text=" 跟进记录"
+                android:textColor="@color/tvc8" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line_height"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/parent_margin"
+            android:layout_marginTop="@dimen/parent_margin"
+            android:background="@color/pub_backgroud_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_operation_log"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/operation_log"
+                android:gravity="center"
+                android:padding="@dimen/parent_margin"
+                android:text=" 操作记录"
+                android:textColor="@color/tvc8" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/line_height"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/parent_margin"
+            android:layout_marginTop="@dimen/parent_margin"
+            android:background="@color/pub_backgroud_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/custom_more"
+                android:gravity="center"
+                android:padding="@dimen/parent_margin"
+                android:text=" 更多"
+                android:textColor="@color/tvc8" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

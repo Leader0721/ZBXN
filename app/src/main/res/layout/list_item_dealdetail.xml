@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成交客户\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_project"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:text="必填"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额 (元)\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:text="必填"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回款日期\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:id="@+id/tt_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:text="必填"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注\u3000\u3000\u3000\u3000\u3000"
+            android:textColor="@color/tvc9"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:id="@+id/tt_remark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_inviteempl"
+            android:text="必填"
+            android:maxLines="6"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

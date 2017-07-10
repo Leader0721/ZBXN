@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_ripple"
+    android:minHeight="96dp"
+    android:padding="1px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/style_bt_trans_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/parent_margin_large"
+        android:paddingTop="@dimen/parent_margin_large">
+
+        <ImageView
+            android:id="@+id/mIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/mTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mIcon"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="1dp"
+            android:text="开发中"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_8" />
+
+        <TextView
+            android:id="@+id/mName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mIcon"
+            android:layout_centerHorizontal="true"
+            android:text="测  试"
+            android:textColor="@color/tvc6"
+            android:textSize="@dimen/app_text_13" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

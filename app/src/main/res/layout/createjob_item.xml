@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical">
+    <!--人事-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ripple"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@drawable/selector_check_mulit" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="2"
+            android:gravity="fill_horizontal|center_vertical"
+            android:text="人事"
+            android:textColor="@color/tvc3"
+            android:textSize="@dimen/app_text_14" />
+
+        <TextView
+            android:layout_gravity="right|end"
+            android:lines="1"
+            android:singleLine="true"
+            android:id="@+id/tv_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/tvcc"
+            android:textSize="@dimen/app_text_14" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="@dimen/parent_margin"
+            android:scaleType="centerInside"
+            android:src="@mipmap/bg_divider_1" />
+
+    </LinearLayout>
+
+</LinearLayout>

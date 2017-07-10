@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_ripple"
+    android:layout_marginBottom="@dimen/parent_margin_top"
+    android:layout_marginTop="@dimen/parent_margin_top"
+    android:orientation="vertical"
+    android:padding="@dimen/parent_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:ems="5"
+            android:singleLine="true"
+            android:text="解放啦设计"
+            android:textColor="@color/tvc9" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/parent_margin_large"
+            android:layout_weight="1"
+            android:text="22分钟前"
+            android:textColor="@color/tvc9" />
+
+        <TextView
+            android:id="@+id/tv_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tv_followup"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="跟进记录" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/parent_margin_top"
+        android:text="客户目前有意向合作，但需要考虑资金的问题，还在犹豫中!"
+        android:textColor="@color/tvc3" />
+
+    <com.pub.widget.MyGridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/parent_margin"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:horizontalSpacing="@dimen/parent_margin"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/parent_margin" />
+
+    <com.pub.widget.MyListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/parent_margin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/parent_margin_top"
+            android:text="0"
+            android:textColor="#555C66" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/comment" />
+
+    </LinearLayout>
+</LinearLayout>

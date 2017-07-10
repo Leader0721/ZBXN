@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/app_text_16_middle"
+            android:id="@+id/tt_cost"
+            android:textColor="@color/tvc6"
+            android:text="已花费 ( "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/app_text_16_middle"
+            android:text="22222"
+            android:textColor="@color/tvc9"
+            android:id="@+id/tt_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tt_money"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/app_text_16_middle"
+            android:textColor="@color/tvc6"
+            android:text=" ) 元"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

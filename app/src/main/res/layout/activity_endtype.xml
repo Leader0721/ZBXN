@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:scrollbars="none"
+            android:id="@+id/listView_industry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:background="@color/pub_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rela_timePicker"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.zbxn.main.activity.schedule.TimePickerView
+                android:id="@+id/year_picker"
+                android:layout_weight="1.4"
+                android:layout_width="0dp"
+                android:layout_height="160dp" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/app_text_22"
+                android:textColor="@color/tvc3"
+                android:text="年"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.zbxn.main.activity.schedule.TimePickerView
+                android:id="@+id/month_picker"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="160dp" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/app_text_22"
+                android:textColor="@color/tvc3"
+                android:text="月"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.zbxn.main.activity.schedule.TimePickerView
+                android:id="@+id/day_picker"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="160dp" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/app_text_22"
+                android:textColor="@color/tvc3"
+                android:text="日"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rela_cishuPicker"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/app_text_14"
+                android:textColor="@color/tvc9"
+                android:text="          "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.zbxn.main.activity.schedule.TimePickerView
+                android:id="@+id/count_picker"
+                android:layout_width="100dp"
+                android:layout_height="160dp" />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/app_text_14"
+                android:textColor="@color/tvc9"
+                android:text="次后结束"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

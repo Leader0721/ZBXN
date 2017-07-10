@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/layout_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:tag="back">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:tag="front">
+
+        <LinearLayout
+            android:id="@+id/ll_total"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_ripple"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:src="@mipmap/position_employees" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/parent_margin"
+                android:layout_weight="4"
+                android:gravity="center_vertical"
+                android:text="总经理"
+                android:textColor="@color/tvc3"
+                android:textSize="@dimen/app_text_14" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/tvc6"
+                android:textColorHint="@color/tvcc" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

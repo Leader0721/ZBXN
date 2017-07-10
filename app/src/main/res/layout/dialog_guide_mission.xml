@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_creat"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/zhiyin_renwu_jia" />
+
+        <ImageView
+            android:id="@+id/img_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_creat"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:src="@mipmap/zhiyin_renwu_zi" />
+
+        <ImageView
+            android:id="@+id/img_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/img_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:clickable="true"
+            android:src="@mipmap/zhiyin_kaoqin_anniu" />
+
+    </RelativeLayout>
+</RelativeLayout>

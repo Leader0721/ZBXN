@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/parent_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="转移对象"
+            android:textColor="@color/tvc3" />
+
+        <TextView
+            android:id="@+id/tv_customName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="山东省淄博市智博星网络科技有限公司"
+            android:textColor="@color/tvc3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/parent_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="新负责人"
+            android:textColor="@color/tvc3" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请选择"
+            android:textColor="@color/tvc3"
+            android:textColorHint="@color/tvc9" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/icon_arrows" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/parent_margin_top"
+        android:background="@color/white"
+        android:padding="@dimen/parent_margin"
+        android:text="转移包含以下业务"
+        android:textColor="@color/tvc3" />
+
+    <ListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null">
+
+    </ListView>
+</LinearLayout>

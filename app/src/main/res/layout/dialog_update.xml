@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="270dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:background="@drawable/style_dialog_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/mImageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/style_dialog_bg"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_dialog_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="升级到新版本"
+                android:textColor="@color/tvc3" />
+
+            <TextView
+                android:id="@+id/dialog_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/parent_margin_top"
+                android:textColor="@color/tvc6"
+                android:textSize="@dimen/app_text_13" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/mBtnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="@dimen/parent_margin_large"
+        android:background="@drawable/selector_dialog_btn_blue"
+        android:gravity="center"
+        android:padding="@dimen/parent_margin_top"
+        android:text="立即升级"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_text_16_middle" />
+</LinearLayout>

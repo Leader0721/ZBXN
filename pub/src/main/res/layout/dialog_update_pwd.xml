@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_background"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="验证原密码"
+            android:textColor="@color/tvc3"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tv_Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="为保障你的数据安全，修改密码前请填写原密码。"
+            android:textColor="@color/tvc6"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:textColor="@color/tvc6"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_marginTop="5dp"
+            android:background="@color/pub_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/dialog_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="取消"
+                android:textColor="@color/dialog_update_blue"
+                android:textSize="16dp" />
+            <View
+                android:background="@color/pub_line_color"
+                android:layout_width="@dimen/line_height"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/dialog_ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="确定"
+                android:textColor="@color/dialog_update_blue"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pub_backgroud_color"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/pub_backgroud_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.pub.widget.smarttablayout.SmartTabLayout
+            android:id="@+id/mSmartTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:paddingBottom="2dp"
+            app:stl_customTabTextLayoutId="@layout/workblogdetail_tab"
+            app:stl_customTabTextViewId="@+id/textview_tabname"
+            app:stl_indicatorColor="@color/main_tab_text_blue"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorThickness="2dp"
+            app:stl_underlineThickness="2dp" />
+
+        <View
+            android:id="@+id/mTopShader"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/pub_backgroud_color" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
